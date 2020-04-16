@@ -14,6 +14,10 @@ X* Test Pagespeed Insights API and Safe Browsing API
 
 * Add Devise gem to allow users to create accounts as well as create root/admin account for user and URL management. 
 
+* Create home page that has link to view all URL's and has link for users to sign up and create account.
+
+* Create way for users to delete account and way for root/admin to delete users account and delete all associated URL's (Devise may have a way to do this build it)
+
 * Break out separate views for users to view all URL's and to view each URL ensuring root/admin user has access to all URL's view only.
 
 * Root/admin user all URL's view should add user that has added each URL
