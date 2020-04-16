@@ -12,6 +12,8 @@ X* Add HTTParty gem to talk to API's
 
 X* Test Pagespeed Insights API and Safe Browsing API
 
+* Add Figaro gem to hide API keys for security
+
 * Add Devise gem to allow users to create accounts as well as create root/admin account for user and URL management. 
 
 * Create home page that has link to view all URL's and has link for users to sign up and create account.
