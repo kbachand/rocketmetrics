@@ -12,7 +12,11 @@ X* Add HTTParty gem to talk to API's
 
 X* Test Pagespeed Insights API and Safe Browsing API
 
-* Add Devise gem to allow users to create accounts as well as create root account for user and URL management. 
+* Add Devise gem to allow users to create accounts as well as create root/admin account for user and URL management. 
+
+* Break out separate views for users to view all URL's and to view each URL ensuring root/admin user has access to all URL's view only.
+
+* Root/admin user all URL's view should add user that has added each URL
 
 * Create way to allow users to manually run check each URL and display message while result loads (both API's take time to display response).
 
