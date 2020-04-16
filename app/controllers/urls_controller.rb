@@ -3,10 +3,20 @@ class UrlsController < ApplicationController
 
   def index
     @urls = Url.all
+
+     #response = HTTParty.get("https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=https://twolittlemonkeysphotography.com")
+
+    #@response = response['lighthouseResult']['requestedUrl']
   end
 
   def show
     @url = Url.find(params[:id])
+
+     response = HTTParty.get("https://www.googleapis.com/pagespeedonline/v5/runPagespeed?url=#{@url.url}")
+
+    @requestedurl = response['lighthouseResult']['requestedUrl']
+    @score = response['lighthouseResult']['environment']['networkUserAgent']
+    @response = response
   end
 
   def new
